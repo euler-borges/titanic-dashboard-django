@@ -17,8 +17,8 @@
       const classes = {{ classes }};
       const countByClass = {{ count_by_class }};
       const top10 = {{ top10 | safe }};
-      const topNames = top10.map((r) => r.Name.split(",")[0]);
-      const topFares = top10.map((r) => r.Fare);
+      const topNames = top10.map((r) => r.name.split(",")[0]);
+      const topFares = top10.map((r) => r.fare);
       const survivedByClass = {{ survived_by_class }};
       const diedByClass = {{ died_by_class }};
       const ports = {{ ports|safe }};
